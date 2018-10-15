@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ChannelBot Documentation</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body class="body-green">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="https://channelbot.glitch.me">
+                            <span aria-hidden="true" class="fab fa-slack-hash icon"></span>
+                            <span class="text-bold">Channel</span><span class="text-highlight">Bot</span>
+                        </a>
+                    </h1>
+                </div><!--//branding-->
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="https://channelbot.glitch.me">Home</a></li>
+                    <li class="breadcrumb-item active">Documentation</li>
+                </ol>
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><i class="icon fas fa-file-alt"></i> Documentation</h1>
+                </div><!--//doc-header-->
+                <div class="doc-body row">
+                    <div class="doc-content col-md-9 col-12 order-1">
+                        <div class="content-inner">
+                            <section id="download-section" class="doc-section">
+                                <h2 class="section-title">Invite</h2>
+                                <div class="section-block">
+                                    <p>ChannelBot is a <a href="https://discordapp.com">Discord</a> bot that helps create beautiful servers with only one command. Its features include Instant Channel Templating, Channel Locking, Speedy Permissions, and 24/7 uptime and support, all in simple commands. So what are you waiting for?
+                                    </p>
+                                    <a href="https://discordapp.com/api/oauth2/authorize?client_id=443545183997657120&permissions=8&scope=bot" class="btn btn-green" target="_blank"><i class="fas fa-plus-circle"></i> Add ChannelBot to Your Server</a>
+                                </div>
+                            </section><!--//doc-section-->
+
+                            <section id="code-section" class="doc-section">
+                                <h2 class="section-title">Channel Management Commands</h2>
+                                <div class="section-block">
+                                    <p>
+                                        Here is a list of all ChannelBot's channel management commands with usage, examples, and more! How could it be this simple?
+                                    </p>
+
+                                </div><!--//section-block-->
+                                <div id="html" class="section-block">
+
+                                    <div class="callout-block callout-success">
+                                        <div class="icon-holder">
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div><!--//icon-holder-->
+                                        <div class="content">
+                                            <h4 class="callout-title">Useful Tip:</h4>
+                                            <p>All commands start with the <code>ch!</code> prefix, so a command can be run by saying <code>ch!(command)</code> in your discord server.</p>
+                                        </div><!--//content-->
+                                    </div>
+                                      <br>
+                                        <h2>Welcome User Command</h2>
+                                        <br>
+                                        <h6>Description</h6>
+                                        <p>Set the channel where new users will be welcomed with an embed!</p>
+                                        <br>
+                                        <h6>Usage</h6>
+                                        <code>ch!setwelcome (welcome-message)</code><br>
+                                        <code>ch!delwelcome</code>
+                                        <br><br>
+                                        <h6>Example</h6>
+                                        <p><code>ch!setwelcome Welcome to the server!</code> - Welcomes new users to the server with the message: "Welcome to the server!".</p>
+                                        <br>
+                                        <h6>Image</h6>
+                                        <img src="https://cdn.glitch.com/4c900f48-d626-42e8-a84e-5607321157e4%2FScreen%20Shot%202018-10-14%20at%2011.45.32%20AM.png?1539542782947" alt="Welcome Example" style="width:50%;height:50%;">
+                                </div><!--//section-block-->
+                                <div id="css" class="section-block">
+                                        <br>
+                                          <h2>Clear Channel Command</h2>
+                                          <br>
+                                          <h6>Description</h6>
+                                          <p>Clear all messages in a channel.</p>
+                                          <br>
+                                          <h6>Usage</h6>
+                                          <code>ch!clearchnl</code>
+                                          <br><br>
+                                          <br>
+                                          <h6>Gif</h6>
+                                          <img src="https://cdn.glitch.com/4c900f48-d626-42e8-a84e-5607321157e4%2F43f9055afdcd00083f4f2b0ada092b65.gif?1539543803164" alt="Welcome Example" style="width:75%;height:75%;">
+                                </div><!--//section-block-->
+                                <div id="sass" class="section-block">
+                                  <br>
+                                    <h2>Channel Setup Command</h2>
+                                    <br>
+                                    <h6>Description</h6>
+                                    <p>ChannelBot will setup your server channels and permissions from different server templates.</p>
+                                    <br>
+                                    <h6>Usage</h6>
+                                    <code>ch!channelsetup</code>
+                                    <br><br>
+                                    <h6>Aliases</h6>
+                                    <code>ch!chnlsetup + ch!autochannels</code>
+                                    <br><br>
+                                    <h6>Image</h6>
+                                    <img src="https://cdn.glitch.com/4c900f48-d626-42e8-a84e-5607321157e4%2F1b68986ba4decac6d871821a0d4b78fd.gif?1539544949040" alt="Welcome Example" style="width:50%;height:50%;">
+                                </div><!--//section-block-->
+                                <div id="less" class="section-block">
+                                  <br>
+                                    <h2>Lock/Unlock command</h2>
+                                    <br>
+                                    <h6>Description</h6>
+                                    <p>Lock a channel to prevent users from chatting in it.</p>
+                                    <br>
+                                    <h6>Usage</h6>
+                                    <code>ch!lock</code><br>
+                                    <code>ch!unlock</code>
+                                    <br><br>
+                                    <h6>Image</h6>
+                                    <img src="https://cdn.glitch.com/4c900f48-d626-42e8-a84e-5607321157e4%2Fec497b62d9e78841a33d2371f132bc10.gif?1539545672839" alt="Welcome Example" style="width:50%;height:50%;">
+                                </div><!--//section-block-->
+                                <div id="javascript" class="section-block">
+                                  <br>
+                                    <h2>Channel Description Command</h2>
+                                    <br>
+                                    <h6>Description</h6>
+                                    <p>Set the description of many channels at once.</p>
+                                    <br>
+                                    <h6>Usage</h6>
+                                    <code>ch!description (description) | (channel mention(s))</code>
+                                    <br><br>
+                                    <h6>Example</h6>
+                                    <p><code>ch!description Hi! | #general #announcments</code> - set the description/topic of general and announcments to <code>Hi!</code>.</p>
+                                    <br>
+                                    <h6>Image</h6>
+                                    <img src="https://cdn.glitch.com/4c900f48-d626-42e8-a84e-5607321157e4%2F8d974b88839fbc7cc462f44808899df2.gif?1539546201381" alt="Welcome Example" style="width:50%;height:50%;">
+                                </div><!--//section-block-->
+                                <div id="python" class="section-block">
+                                  <br>
+                                    <h2>Channel Permission Command</h2>
+                                    <br>
+                                    <h6>Description</h6>
+                                    <p>Quicly add a permission to a role or user in a specific channel.</p>
+                                    <br>
+                                    <h6>Usage</h6>
+                                    <code>ch!addperm (perm-name) (user/role-mention)</code>
+                                    <br><br>
+                                    <h6>Aliases</h6>
+                                    <code>addchannelperm + giveperm + setperm</code>
+                                    <br>
+                                    <br>
+                                    <h6>Example</h6>
+                                    <p><code>ch!addperm SEND_MESSAGES @Codingpro</code> - Allow codingpro to send messages in the current channel.</p>
+                                    <br>
+                                    <h6>Image</h6>
+                                    <img src="https://cdn.glitch.com/4c900f48-d626-42e8-a84e-5607321157e4%2F3f9e442e6c03b146378fd05470b004b0.gif?1539548003531" alt="Welcome Example" style="width:50%;height:50%;">
+                                </div><!--//section-block-->
+                                <div id="php" class="section-block">
+                                  <br>
+                                    <h2>Channel Permission Remove Command</h2>
+                                    <br>
+                                    <h6>Description</h6>
+                                    <p>Quicly remove a permission from a role or user.</p>
+                                    <br>
+                                    <h6>Usage</h6>
+                                    <code>ch!delperm (perm-name) (user/role-mention)</code>
+                                    <br><br>
+                                    <h6>Example</h6>
+                                    <p><code>ch!delperm SEND_MESSAGES @Codingpro</code> - revent codingpro from sending messages.</p>
+                                    <br>
+                                    <h6>Image</h6>
+                                    <img src="https://cdn.glitch.com/4c900f48-d626-42e8-a84e-5607321157e4%2F0f023c7c5b8c1cd34bf67bc3afa5aed1.gif?1539548295490" alt="Welcome Example" style="width:50%;height:50%;">
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+                            <section id="tables-section" class="doc-section">
+                              <h2 class="section-title">In-Channel Commands</h2>
+                              <div class="section-block">
+                                  <p>
+                                      In-Channel Commands are commands that can be run in channels. These commands do not effect channels in any way, but they are still useful.
+                                  </p>
+
+                              </div><!--//section-block-->
+                              <div id="rate" class="section-block">
+
+                                  <div class="callout-block callout-success">
+                                      <div class="icon-holder">
+                                          <i class="fas fa-thumbs-up"></i>
+                                      </div><!--//icon-holder-->
+                                      <div class="content">
+                                          <h4 class="callout-title">Useful Tip:</h4>
+                                          <p>All commands start with the <code>ch!</code> prefix, so a command can be run by saying <code>ch!(command)</code> in your discord server.</p>
+                                      </div><!--//content-->
+                                  </div>
+                                    <br>
+                                      <h2>Rate Command</h2>
+                                      <br>
+                                      <h6>Description</h6>
+                                      <p>Like poll, but the bot reacts with the scale of numbers specified! Let users rate things!</p>
+                                      <br>
+                                      <h6>Usage</h6>
+                                      <code>ch!rate (1-5) | (question)</code>
+                                      <br><br>
+                                      <h6>Examples</h6>
+                                      <p><code>ch!rate 5 | this server</code> - Rate my server from 1-5.<br>
+                                        <code>ch!rate 2 | 1:like cheese 2:like apples</code> - ask users a question.
+                                      </p>
+                                      <br>
+                                      <h6>Image</h6>
+                                      <img src="https://cdn.glitch.com/4c900f48-d626-42e8-a84e-5607321157e4%2FScreen%20Shot%202018-10-14%20at%203.54.33%20PM.png?1539557701860" alt="Welcome Example" style="width:50%;height:50%;">
+                              </div><!--//section-block-->
+                              <div id="poll" class="section-block">
+                                      <br>
+                                        <h2>Poll Command</h2>
+                                        <br>
+                                        <h6>Description</h6>
+                                        <p>Create a poll for users to vote on.</p>
+                                        <br>
+                                        <h6>Usage</h6>
+                                        <code>ch!poll (message)</code>
+                                        <br><br>
+                                        <h6>Example</h6>
+                                        <p><code>ch!poll Do you like Codingpro?</code> - Vote if you like Codingpro.</p>
+                                        <br>
+                                        <h6>Image</h6>
+                                        <img src="https://cdn.glitch.com/4c900f48-d626-42e8-a84e-5607321157e4%2FScreen%20Shot%202018-10-14%20at%204.01.55%20PM.png?1539558138275" alt="Welcome Example" style="width:75%;height:75%;">
+                              </div><!--//section-block-->
+                              <div id="purge" class="section-block">
+                                <br>
+                                  <h2>Purge Command</h2>
+                                  <br>
+                                  <h6>Description</h6>
+                                  <p>Bulk delete messages in your channel.</p>
+                                  <br>
+                                  <h6>Usage</h6>
+                                  <code>ch!purge (1-99)</code>
+                                  <br><br>
+                                  <h6>Example</h6>
+                                  <p><code>ch!purge 25</code> - delete the latest 25 messages in the channel.</p>
+                                  <br>
+                                  <h6>Aliases</h6>
+                                  <code>ch!prune</code>
+                                  <br><br>
+                                  <h6>Image</h6>
+                                  <img src="https://cdn.glitch.com/4c900f48-d626-42e8-a84e-5607321157e4%2Fb2997b14a6456074a8f142c9fb9bea9b.gif?1539558470082" alt="Welcome Example" style="width:50%;height:50%;">
+                              </div><!--//section-block-->
+                              <div id="progiveaway" class="section-block">
+                                <br>
+                                  <h2>ProGiveaway Command</h2>
+                                  <br>
+                                  <h6>Description</h6>
+                                  <p>Giveaway for ChannelBot upvoters only! Includes an included image, giveaway description, and a DM to the winner!</p>
+                                  <br>
+                                  <h6>Usage</h6>
+                                  <code>ch!progiveaway (item) | (time in minutes) | (giveaway description) | (attachment url) | (DM to winner)</code>
+                                  <br><br>
+                                  <h6>Image</h6>
+                                  <img src="https://cdn.glitch.com/4c900f48-d626-42e8-a84e-5607321157e4%2F7e959dff91d878b7532ea6fe11ca61d3.gif?1539559060052" alt="Welcome Example" style="width:50%;height:50%;">
+                              </div><!--//section-block-->
+                              <div id="giveaway" class="section-block">
+                                <br>
+                                  <h2>Giveaway Command</h2>
+                                  <br>
+                                  <h6>Description</h6>
+                                  <p>Give away something on your discord server!</p>
+                                  <br>
+                                  <h6>Usage</h6>
+                                  <code>ch!giveaway (Item-to-give-away) | (minutes)</code>
+                                  <br><br>
+                                  <h6>Example</h6>
+                                  <p><code>ch!giveaway 5 dollars | 10</code> - giveaway of 5 dollars that lasts 10 minutes.</p>
+                                  <br>
+                                  <h6>Image</h6>
+                                  <img src="https://cdn.glitch.com/4c900f48-d626-42e8-a84e-5607321157e4%2Ff300840bb1c74ea6407cef928fa372b1.gif?1539559571734" alt="Welcome Example" style="width:50%;height:50%;">
+                              </div><!--//section-block-->
+                              <div id="setemoji" class="section-block">
+                                <br>
+                                  <h2>SetEmoji Command</h2>
+                                  <br>
+                                  <h6>Description</h6>
+                                  <p>Set a channel to emoji mode: Every message in this channel will be auto-reacted with random emojis from a specified list. Run <code>ch!setmaxemoji (number)</code> to set the maxmimum number of emojis reated with.</p>
+                                  <br>
+                                  <h6>Usage</h6>
+                                  <code>ch!setemoji</code>
+                                  <br><br>
+                                  <h6>Aliases</h6>
+                                  <code>setfeatureemoji + sfemoji + sfeatureemoji</code>
+                                  <br>
+                                  <h6>Image</h6>
+                                  <img src="https://cdn.glitch.com/4c900f48-d626-42e8-a84e-5607321157e4%2F3c95124e69dfd4832dfa8f2abf3a5aba.gif?1539560048239" alt="Welcome Example" style="width:50%;height:50%;">
+                              </div><!--//section-block-->
+                              <div id="setsuggestion" class="section-block">
+                                <br>
+                                  <h2>SetSuggestion Command</h2>
+                                  <br>
+                                  <h6>Description</h6>
+                                  <p>Set your channel to a suggestion channel! This bot will automatically react 👍 and 👎 on every message in this channel.</p>
+                                  <br>
+                                  <h6>Usage</h6>
+                                  <code>ch!setsuggestion</code>
+                                  <br><br>
+                                  <h6>Aliases</h6>
+                                  <code>ssuggestion + setsug</code>
+                                  <h6>Image</h6>
+                                  <img src="https://cdn.glitch.com/4c900f48-d626-42e8-a84e-5607321157e4%2Ff1a54840d0afe0365c3df33fb8bc0926.gif?1539560584944" alt="Welcome Example" style="width:50%;height:50%;">
+                              </div><!--//section-block-->
+                            </section><!--//doc-section-->
+                            <section id="buttons-section" class="doc-section">
+                                <h2 class="section-title">Moderation Commands</h2>
+                                <div class="section-block">
+                                    <p>
+                                        Moderation Commands help keep your server safe! Use these simply instead of manually doing a lot of work!
+                                    </p>
+
+                                </div><!--//section-block-->
+                                <div id="addmod" class="section-block">
+
+                                    <div class="callout-block callout-success">
+                                        <div class="icon-holder">
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div><!--//icon-holder-->
+                                        <div class="content">
+                                            <h4 class="callout-title">Useful Tip:</h4>
+                                            <p>All commands start with the <code>ch!</code> prefix, so a command can be run by saying <code>ch!(command)</code> in your discord server.</p>
+                                        </div><!--//content-->
+                                    </div>
+                                      <br>
+                                        <h2>Add/Delmod Command</h2>
+                                        <br>
+                                        <h6>Description</h6>
+                                        <p>Give a user access to all commands no matter the permissions. (Will not work on commands that require ADMINISTRATOR or MANAGE_GUILD)</p>
+                                        <br>
+                                        <h6>Usage</h6>
+                                        <code>ch!addmod (user-mention/role-mention)</code><br>
+                                        <code>ch!delmod (user-mention/role-mention)</code>
+                                        <br><br>
+                                        <h6>Examples</h6>
+                                        <p><code>ch!addmod @Codingpro</code> - add Codingpro to the mods.<br>
+                                          <code>ch!delmod @Codingpro</code> - remove Codingpro from the mods.
+                                        </p>
+                                        <br>
+                                        <h6>Image</h6>
+                                        <img src="https://cdn.glitch.com/4c900f48-d626-42e8-a84e-5607321157e4%2FScreen%20Shot%202018-10-14%20at%205.25.57%20PM.png?1539563197166" alt="Welcome Example" style="width:50%;height:50%;">
+                                </div><!--//section-block-->
+                                <div id="lockdown" class="section-block">
+                                        <br>
+                                          <h2>Lockdown Command</h2>
+                                          <br>
+                                          <h6>Description</h6>
+                                          <p>Working on the server? Lock it down for users temporarily.</p>
+                                          <br>
+                                          <h6>Usage</h6>
+                                          <code>ch!lockdown &lt;on/off&gt;</code>
+                                          <br><br>
+                                          <h6>Examples</h6>
+                                          <p><code>ch!lockdown on</code> - Lock the server.<br>
+                                          <code>ch!lockdown off</code> - Unlock the server.</p>
+                                          <br>
+                                          <h6>Image</h6>
+                                          <img src="https://cdn.glitch.com/4c900f48-d626-42e8-a84e-5607321157e4%2F7d441b26c5fb1cf465adcb1035eff7c1.gif?1539563411789" alt="Welcome Example" style="width:75%;height:75%;">
+                                </div><!--//section-block-->
+                                <div id="kick" class="section-block">
+                                  <br>
+                                    <h2>Kick Command</h2>
+                                    <br>
+                                    <h6>Description</h6>
+                                    <p>Kick A User/Bot from your server.</p>
+                                    <br>
+                                    <h6>Usage</h6>
+                                    <code>ch!kick (user-id) | (reason)</code>
+                                    <br><br>
+                                    <h6>Example</h6>
+                                    <p><code>ch!kick @codingpro | HAHHAHA</code> - Kick Codingpro from your server.</p>
+                                    <br>
+                                    <h6>Image</h6>
+                                    <img src="https://cdn.glitch.com/4c900f48-d626-42e8-a84e-5607321157e4%2FScreen%20Shot%202018-10-14%20at%205.36.40%20PM.png?1539563813619" alt="Welcome Example" style="width:50%;height:50%;">
+                                </div><!--//section-block-->
+                                <div id="ban" class="section-block">
+                                  <br>
+                                    <h2>Ban Command</h2>
+                                    <br>
+                                    <h6>Description</h6>
+                                    <p>Ban A User/Bot from your server.</p>
+                                    <br>
+                                    <h6>Usage</h6>
+                                    <code>ch!ban (user) | (reason)</code>
+                                    <br><br>
+                                    <h6>Example</h6>
+                                    <p><code>ch!ban @codingpro | being awesome</code> - Ban codingpro from your server (Why would you?).</p>
+                                    <br>
+                                    <h6>Image</h6>
+                                    <img src="https://cdn.glitch.com/4c900f48-d626-42e8-a84e-5607321157e4%2FScreen%20Shot%202018-10-14%20at%205.40.32%20PM.png?1539564047436" alt="Welcome Example" style="width:50%;height:50%;">
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+                        </div><!--//content-inner-->
+                    </div><!--//doc-content-->
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                        <div id="doc-nav" class="doc-nav">
+
+	                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+	                                <a class="scrollto" href="#download-section">Invite</a>
+	                                <a class="scrollto" href="#code-section">Channel Commands</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#html">Welcome Command</a>
+                                        <a class="nav-link scrollto" href="#css">Clear Channel Command</a>
+                                        <a class="nav-link scrollto" href="#sass">Channel Setup Command</a>
+                                        <a class="nav-link scrollto" href="#less">Lock/Unlock Command</a>
+                                        <a class="nav-link scrollto" href="#javascript">Channel Description Command</a>
+                                        <a class="nav-link scrollto" href="#python">Channel Perms Command</a>
+                                        <a class="nav-link scrollto" href="#php">Channel Perms Remove Command</a>
+                                    </nav><!--//nav-->
+	                                <a class="scrollto" href="#tables-section">In-Channel Commands</a>
+                                  <nav class="doc-sub-menu nav flex-column">
+                                      <a class="nav-link scrollto" href="#rate">Rate Command</a>
+                                      <a class="nav-link scrollto" href="#poll">Poll Command</a>
+                                      <a class="nav-link scrollto" href="#purge">Purge Command</a>
+                                      <a class="nav-link scrollto" href="#progiveaway">Pro Giveaway Command</a>
+                                      <a class="nav-link scrollto" href="#giveaway">Giveaway Command</a>
+                                      <a class="nav-link scrollto" href="#setemoji">Set Emoji Command</a>
+                                      <a class="nav-link scrollto" href="#setsuggestion">Set Suggestion Command</a>
+                                  </nav><!--//nav-->
+	                                <a class="scrollto" href="#buttons-section">Moderation Commands</a>
+                                  <nav class="doc-sub-menu nav flex-column">
+                                    <a class="nav-link scrollto" href="#addmod">Add/Delmod Command</a>
+                                    <a class="nav-link scrollto" href="#lockdown">Lockdown Command</a>
+                                    <a class="nav-link scrollto" href="#kick">Kick Command</a>
+                                    <a class="nav-link scrollto" href="#ban">Ban Command</a>
+                                  </nav>
+	                            </nav><!--//doc-menu-->
+
+                        </div>
+                    </div><!--//doc-sidebar-->
+                </div><!--//doc-body-->
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+
+
+    </div><!--//page-wrapper-->
+
+    <footer id="footer" class="footer text-center">
+        <div class="container">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Template by <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers</small>
+
+        </div><!--//container-->
+    </footer><!--//footer-->
+
+
+    <!-- Main Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html>
